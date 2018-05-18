@@ -1,0 +1,9 @@
+[project]
+  glob_handler = watchman
+  allow_symlinks = forbid
+  ignore = .git, .idea, .gradle, local.properties, **/.DS_Store, **/*.iml
+  temp_files = ^#.*#$, .*~$, .*\.swp$
+  ide = intellij
+  parallel_parsing = true
+  disable_r_java_idea_generator = true
+  build_file_search_method = watchman
