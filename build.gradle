@@ -6,6 +6,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.uber:okbuck:0.38.1'
     }
 }
 
@@ -13,5 +14,22 @@ allprojects {
     repositories {
         jcenter()
         google()
+    }
+}
+
+apply plugin: 'com.uber.okbuck'
+
+okbuck {
+    target = "android-27"
+    buildToolVersion = '27.0.3'
+
+    buckProjects = project.subprojects
+
+    lint {
+        version = '26.1.2'
+    }
+
+    intellij {
+        sources = true
     }
 }
