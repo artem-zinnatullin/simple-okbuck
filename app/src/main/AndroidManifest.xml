@@ -2,4 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lyft.okbucksample">
 
+    <application>
+        <activity android:name="sample.AlexActivity"/>
+    </application>
+
 </manifest>

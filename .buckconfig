@@ -7,3 +7,11 @@
   parallel_parsing = true
   disable_r_java_idea_generator = true
   build_file_search_method = watchman
+
+[intellij]
+  android_sdk_name = Android API 27 Platform
+  android_sdk_type = Android SDK
+  jdk_name = Android API 27 Platform
+  jdk_type = Android SDK
+  default_android_manifest_path = src/main/AndroidManifest.xml
+  extra_compiler_output_modules_path = buck-out/extra-intellij-output

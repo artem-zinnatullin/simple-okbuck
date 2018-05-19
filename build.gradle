@@ -6,7 +6,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
-        classpath 'com.uber:okbuck:0.38.1'
+        classpath 'com.uber:okbuck:0.37.4'
     }
 }
 
